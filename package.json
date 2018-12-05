@@ -1,0 +1,19 @@
+{
+  "name": "fireworks",
+  "version": "1.0.0",
+  "description": "환경\r - php 7.2.10\r - mariadb 10.1.36\r - node 8.12.0\r - npm 6.4.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdas93/fireworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emdas93/fireworks/issues"
+  },
+  "homepage": "https://github.com/emdas93/fireworks#readme"
+}
