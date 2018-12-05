@@ -7,3 +7,5 @@
 
 문서 경로
 - https://drive.google.com/drive/u/0/folders/1S4NVFprlwy7H4Vb_uClYFKx6Jluta3V2
+
+## 또 뭐 필요한거 없나 환경은 
