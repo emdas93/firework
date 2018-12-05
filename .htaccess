@@ -1,0 +1,28 @@
+# Apache 설정 관계 없이 .htaccess 파일에 설정을 따르도록
+Options -MultiViews
+
+# Rewrite 엔진 사용
+RewriteEngine On
+
+# 인덱싱 못하도록 막음
+Options -Indexes
+
+# 루트 디렉토리 지정
+# RewriteBase /fireworks/
+
+# URL이 실제로 존재하는 파일이 아닐 경우 계속 진행
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# URL의 최종 경로가 파일이 아닐 경우 진행
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# URL 최종 경로가 심볼릭 링크ㅏ 아닌 경우 계속 진행
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# Clean URL 을 위한 코드
+##############################
+# 외부적으로는 localhost/a/b
+# 내부적으로는 localhost?url=a/b
+##############################
+# 으로 만들어 주는 역할
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
